@@ -1,5 +1,6 @@
 //
-//   Simple framework fo js
+//   Simple framework for js
+//   version_1.1
 //
 
 /**
