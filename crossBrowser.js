@@ -1,10 +1,33 @@
-//ViewItem - Wrapper
-//-------------
-//element-constructs with getElementById
 //
-//-------------
-//addEventListener(type,handler,useCapture)
-//-------------
+//   Simple framework fo js
+//
+
+/**
+ *  @see also
+ *   <a href=""></a>
+ *
+ *  <a href="crossBrowser.html">link</a>
+ *  
+ *   function <b>log</b> base function for logging can be enhanced
+ *   @param	string	message to log
+ */
+function log(message){
+	if(window.console) console.log(message)
+	else alert(message)
+}
+
+/**
+ *   function <b>postToast</b> base function for toasting can be enhanced
+ *   @param	string	message to post
+ *   @param	float	length of time
+ */
+function postToast(message,time){ alert(message); }
+
+// **************************************************************
+// * below here comments do not work with doxygen, so are put in
+// * crossBrowserDoxygen.js
+// **************************************************************
+
 var ViewItem = new function(){
 	this.element;
 	//constructor function
@@ -37,9 +60,7 @@ var ViewItem = new function(){
 //
 	//e.addEventListener("click",event1.method,false)
 /*
-
 		//alert(e.element.innerHTML);
-
 var ViewItem2 = function(element){
 	return new function(){
 		this.element=element
@@ -51,7 +72,6 @@ var ViewItem2 = function(element){
 		}
 	}
 }
-
  var e=ViewItem2("id")
 e.addEventListener();
 function el(){
@@ -61,13 +81,6 @@ this.method=function(){
 }			
 */
 
-//log
-function log(message){ alert(message); }
-
-//toast
-function postToast(message,time){ alert(message); }
-
-//standard function for getElementById
 function $(id){
 	//look for id
 	foundElement=document.getElementById(id);
@@ -79,7 +92,6 @@ function $(id){
 	return foundElement;
 }
 
-//create a new function on the $ class
 $.cookie=function(cookieName,value){
 	if(value==undefined){
 		//generic get cookie
