@@ -8,6 +8,7 @@ Simple html doc, and simple js.
 ##Android
 The android project is not complete, and not tested.
 
+<<<<<<< HEAD
 ###javaDoc support
  For javaDoc needed the additions +
 
@@ -51,6 +52,8 @@ The output goes to
 ###System.out
 For sysout in tests, look in the html output reports, and or use {gradle test -i} option
 
+=======
+>>>>>>> 3a3e3ff8fbf948560132b59b34ca614a58066b0c
 ###Android Test
 For testing a class [without android API elements].
 
