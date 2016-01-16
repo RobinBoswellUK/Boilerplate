@@ -1,0 +1,5 @@
+*.*~
+.fuse*
+.gradle
+build
+javaDoc
