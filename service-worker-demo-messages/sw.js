@@ -21,7 +21,7 @@ self.addEventListener('message', function(event) {
     
     // JSON with command and message, and use the port to post back on    
     if (incomingCommand == "loopback") {
-        console.log("SW message - loopback function new: ", incomingMessage);
+        console.log("SW message - loopback: ", incomingMessage);
         loopBackPort.postMessage({
             "message": "SW copy \' "+incomingMessage+" \' "
         });
